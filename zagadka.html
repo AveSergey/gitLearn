@@ -1,0 +1,73 @@
+<meta charset="utf-8">
+<script type="text/javascript">
+
+	var rightAnsver = 0; // счетсик правельных ответов
+	var wrongAnswer = 0; // счетчик неправельных ответов
+	
+/* Первая загадга */
+
+	var answer = "соль"; //ответ на загадку
+	
+	var userAnswer = prompt("Попробуй отгадать загадку: \n Какое слово дополнит следующий набор слов: Пляс, Река, Тмин, Сила, Удод, Фаза?");
+
+// сравнение ответа
+	if (userAnswer.toLowerCase() == answer){                         //Изменение регистра ответа пользователя
+		alert(" Поздравляем!!! Вы угадали!!! \n Игра окончена!");
+		rightAnsver++;
+	}
+	else {
+		alert(" Вы ошиблись((( \n Игра окончена!");
+		wrongAnswer ++;
+	}
+/* Вторая загадка */
+
+	var answer = "собака";
+
+	var userAnswer = prompt("Попробуйте отгадать вторую загадку: \n Лучший друг человека?");
+
+// сравниваем ответ
+	if (userAnswer.toLowerCase() == answer || userAnswer.toLowerCase() == "пес"){    //Изменение регистра ответа пользователя, сравнение с альтернативным ответом
+		alert(" Поздравляем!!! Вы угадали!!! \n Игра окончена!");
+		rightAnsver++;
+	}
+	else {
+		alert(" Вы ошиблись((( \n Игра окончена!");
+		wrongAnswer ++;
+	}
+
+	/* Третья загадка */
+
+	var answer = "замок";
+
+	var userAnswer = prompt("А теперь третья загадка: \n Не лает, не кусает, а в дом не пускает?");
+
+// сравниваем ответ
+	if (userAnswer.toLowerCase() == answer) {    //Изменение регистра ответа пользователя
+		alert(" Поздравляем!!! Вы угадали!!! \n Игра окончена!");
+		rightAnsver++;
+	}
+	else {
+		alert(" Вы ошиблись((( \n Игра окончена!");
+		wrongAnswer ++;
+	}
+
+	/* Последняя загадка */
+
+	var answer = "да";
+
+	var userAnswer = prompt("И последняя загадка: \n Нравится ли Вам данный курс )))) ?");
+
+// сравниваем ответ
+	if (userAnswer.toLowerCase() == answer || userAnswer.toLowerCase() == "yes" || userAnswer.toLowerCase() == "конечно" || userAnswer.toLowerCase() == "несомненно") {    //Изменение регистра ответа пользователя
+		alert(" Поздравляем!!! Вы угадали!!! \n Игра окончена!");
+		rightAnsver++;
+	}
+	else {
+		alert(" Вы ошиблись((( \n Игра окончена!");
+		wrongAnswer ++;
+	}
+
+	alert("Результат: \n Правильных ответов: " +rightAnsver+ "\n Неправильных ответов: " + wrongAnswer);
+	//document.write(userAnswer);
+
+</script>
